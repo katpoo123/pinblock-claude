@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Pinterest Ad & Product Pin Hider",
+  "version": "1.0",
+  "description": "Hides sponsored ads and shoppable product pins from the Pinterest home feed.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.pinterest.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
